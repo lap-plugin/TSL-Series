@@ -27,6 +27,6 @@
 > The GAIN indicator keeps you safe from unwanted clipping by signaling an overloaded input amplifier. If the GAIN LED lights up during heavy audio peaks, simply dial back the input stage using the GAIN knob.
 
 
+<img width="4417" height="719" alt="ui" src="https://github.com/user-attachments/assets/ef672ad3-c327-4b64-ac4c-fff298046fc4" />
 
-<img width="3049" height="416" alt="akl-a34-preview" src="https://github.com/user-attachments/assets/f44582a9-c430-4376-bd88-8230fd4b10fd" />
 
