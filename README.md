@@ -1,32 +1,17 @@
->  LAP TSL-A34 – Dual-Channel JFET Compressor / Limiter
->
-> The LAP TSL-A34 is not just another digital plugin—it is a complete component-level analog circuit emulation running in real time. 
-> 
-> Unlike standard dynamics processors, the TSL-A34 bypasses generic digital algorithms entirely. Instead, the entire physical audio board is mathematically solved component by component, cycle by cycle. From the input followers and gain stages to the JFET-controlled section, precision rectifier, attack/release network, RATIO divider, and balanced output driver—you get the genuine, unpredictable, and non-linear character of legendary hardware directly in your DAW.
->
->  Key Features & Architecture
-> 
->Component-Level Circuit Modeling: Experience authentic analog warmth, saturation, and dynamic response driven by true-to-life circuit physics.
-> Dual-Channel Configuration:Perfectly optimized for stereo bus processing, sub-mixes, or critical mono tracking.
-> Flexible Input Routing: Easily handle signals routed from mixing consoles, hardware equalizers, or direct DAW tracks into INPUT 1 and 2.
->
-> Quick-Start: Precision Limiter Setup
-> 
-> To lock down your transients and use the TSL-A34 as a high-performance brickwall limiter:
-> 
-> 1. Time Constants: Dial in a fast ATTACK time paired with a long RELEASE recovery constant.
-> 2. Gain Stages: Initialize by setting both the GAIN and OUTPUT controls to zero.
-> 3. Compression Ratio: Set the RATIO divider firmly to a heavy 10:1 ratio.
->
-> Advanced Signal Management & Monitoring
-> 
-> Output Level Fine-Tuning: Cleanly boost or attenuate your finalized output signal using the LEVEL controls, offering a precise range of 0 dB to 6 dB.
-> Instant A/B Testing (BYPASS): Toggle the dedicated BYPASS switch to instantly deactivate the compressor circuit for seamless before-and-after comparisons.
-> Visual LED Feedback:
-> The LIMIT indicator continuously tracks and monitors the limited output voltage.
-> The GAIN indicator keeps you safe from unwanted clipping by signaling an overloaded input amplifier. If the GAIN LED lights up during heavy audio peaks, simply dial back the input stage using the GAIN knob.
+TSL-A34
+
+<img width="1800" height="301" alt="tsl-a34-panel-v5 3" src="https://github.com/user-attachments/assets/697ab1c9-61a1-4206-9f4b-e5bcd05cd675" />
 
 
-<img width="4417" height="719" alt="ui" src="https://github.com/user-attachments/assets/ef672ad3-c327-4b64-ac4c-fff298046fc4" />
+A two-channel JFET limiter / compressor built as a component-level circuit model: the whole audio board - input followers, gain stage, the JFET-controlled stage, the precision rectifier, the attack / release network, the RATIO divider and the balanced output driver - is solved as a circuit in real time.
+
+How it works - and how it differs from a plugin compressor. This is a feedback JFET limiter, and the controls mean what they meant on the unit. There is no threshold control: the threshold is fixed by the board’s trimmers (about −6.5 dBFS at 10:1, falling to about −15.5 dBFS at 3:1). GAIN is the drive into the limiter (0 … +20 dB in front of the gain cell), not make-up gain; OUTPUT adds 0 … +6 dB after the board. RATIO moves threshold and slope together - towards 3:1 the unit starts earlier and more softly, towards 10:1 later and harder - and the knee is hard. ATTACK and RELEASE read the unit’s scale; the actual gain change is slower. The first transient after silence passes at full GAIN until the envelope has charged, and at low frequencies the envelope ripple modulates the gain within the cycle. LIMIT lights from the threshold, GAIN lights when the input stage is overdriven. BYPASS is a relay bypass: the board keeps running.
+
+TSL-E26
+
+<img width="1800" height="301" alt="tsl-e26-panel" src="https://github.com/user-attachments/assets/b967f096-428a-4f6d-bb68-e50a6584265f" />
 
 
+A stepped three-band equaliser built as a component-level circuit model: the whole board - three band stages, each a resistor ladder loaded by an active resonator, the HF CUT low-pass and the output stage - is solved as a circuit in real time. Two channels, two units with their own component tolerances.
+
+How it works - and how it differs from a plugin EQ. TSL-E26 is a stepped equaliser and the controls mean what they meant on the unit. Three bands with stepped gain (±15 dB in 3 dB steps) at switched frequencies (LOW 63 Hz – 1 kHz, MID 0.7 – 4 kHz, HI 2.8 – 11 kHz), each band a resistor ladder loaded by an active resonator. There is no Q control and the Q is not constant: the bell gets wider as the gain gets smaller - about Q 0.8 at ±15 dB, 0.5 at ±9 dB and only 0.31 at ±3 dB, so a small correction is a very broad one. The three stages are in cascade and add up where they overlap. SHELF turns the LOW or HI band into a 6 dB/octave shelf hinged at the selected frequency. HF CUT is a second-order (12 dB/oct) low-pass with −3 dB at 13 / 8.3 / 6.5 / 4.1 kHz. BYPASS is EQ OFF: the resonators are disconnected and the board passes flat. The board clips at about +1 dBFS, so large boosts on hot signals clip inside the EQ as they would in the hardware. The two channels are two units with their own component tolerances.
