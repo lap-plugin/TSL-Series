@@ -1,4 +1,4 @@
-SL series · classic socialist studio hardware from the Eastern Bloc,
+TSL Series · classic socialist studio hardware from the Eastern Bloc,
 
 
 TSL-A34
