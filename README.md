@@ -1,3 +1,6 @@
+SL series · classic socialist studio hardware from the Eastern Bloc,
+
+
 TSL-A34
 
 <img width="1800" height="301" alt="tsl-a34-panel-v5 3" src="https://github.com/user-attachments/assets/697ab1c9-61a1-4206-9f4b-e5bcd05cd675" />
