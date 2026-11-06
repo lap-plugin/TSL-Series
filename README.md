@@ -3,7 +3,8 @@ TSL Series · classic socialist studio hardware from the Eastern Bloc,
 
 TSL-A34
 
-<img width="1800" height="301" alt="tsl-a34-panel-v5 3" src="https://github.com/user-attachments/assets/697ab1c9-61a1-4206-9f4b-e5bcd05cd675" />
+<img width="1800" height="301" alt="tsl-a34-panel-v5 3 1" src="https://github.com/user-attachments/assets/136ba670-07e2-4c5a-9438-22d32e04d326" />
+
 
 
 A two-channel JFET limiter / compressor built as a component-level circuit model: the whole audio board - input followers, gain stage, the JFET-controlled stage, the precision rectifier, the attack / release network, the RATIO divider and the balanced output driver - is solved as a circuit in real time.
@@ -12,7 +13,8 @@ How it works - and how it differs from a plugin compressor. This is a feedback J
 
 TSL-E26
 
-<img width="1800" height="301" alt="tsl-e26-panel" src="https://github.com/user-attachments/assets/b967f096-428a-4f6d-bb68-e50a6584265f" />
+<img width="1800" height="301" alt="tsl-e26-panel" src="https://github.com/user-attachments/assets/a02d197f-cf56-45f7-b4f3-2547c25e6077" />
+
 
 
 A stepped three-band equaliser built as a component-level circuit model: the whole board - three band stages, each a resistor ladder loaded by an active resonator, the HF CUT low-pass and the output stage - is solved as a circuit in real time. Two channels, two units with their own component tolerances.
