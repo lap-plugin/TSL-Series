@@ -30,6 +30,16 @@ A 12-bit digital delay built as a component-level circuit model: the analogue bo
 
 How it works - and how it differs from a plugin delay. TSL-A95 is a 12-bit digital delay modelled part by part: pre-emphasis, a limiter and an anti-alias filter in front of a 12-bit converter, a 32k-word memory, reconstruction filter and de-emphasis after it. The delay time is RANGE (2 ... 512 ms in octaves) × FINE (×0.5 ... ×2). FINE changes the clock of the converter, so turning it while sound is in the memory shifts the pitch like tape; with HOLD the memory loops and FINE transposes it by up to an octave. The delayed signal is band-limited to about 10 kHz and 12 bits; the direct signal is clean. The limiter sits in the delay path after the pre-emphasis, so bright material lights LIMIT first and the repeats come back compressed and darker - FEEDBACK returns them through the limiter and filter again, PHASE inverts the feedback. MODULATION modulates the clock (a vibrato of the delayed sound); its depth in cents grows with RANGE. BYPASS mutes the delayed path only; POWER switches the unit off. HI drives the input 6 dB harder.
 
+TSL-K35
+
+<img width="1566" height="308" alt="preview-ek35" src="https://github.com/user-attachments/assets/d152c182-aab0-4656-a026-5a8748df9e06" />
+
+
+K35 is a compressor-expander built as an automatic level controller: a FET gain cell steered by a control voltage, with the amplifiers and the relay around it, modelled part by part and solved as a circuit in real time. It has two independent sections. The compressor (GAIN, RATIO, RELEASE, AUTO) evens out the level of the programme around a fixed reference point. The expander (THRESHOLD, EXP) pushes down whatever falls below its threshold - noise, spill and room sound in the pauses. THRESHOLD belongs to the expander only; the compressor has no threshold.
+
+What the compressor does. Instead of a threshold it has a rotation point, a fixed reference level of 0 dB = −12 dBFS, through which every curve passes: a signal at −12 dBFS leaves at −12 dBFS whatever RATIO and GAIN are set to. Above the rotation point the signal is compressed by RATIO (2:1 ... 20:1). Below it, quiet material is lifted towards the rotation point by the same ratio - but never by more than GAIN. GAIN is therefore not a make-up control but the most the unit may add to quiet passages: at 0 dB the unit only compresses, and only above −12 dBFS; at +18 dB with RATIO 20:1 it holds everything from about −32 dBFS up to full scale close to −12 dBFS. The detector follows the peaks of the input, the attack is fixed and fast (under 1 ms), RELEASE sets the recovery (0.5 – 3 s) and AUTO makes it programme-dependent. Turning GAIN or RATIO takes effect at once.
+
+What the expander does. With GAIN turned up the compressor lifts the noise in the pauses as well. Below THRESHOLD (−55 ... −15 dB relative to the rotation point, i.e. −67 ... −27 dBFS) the expander lowers the gain 1:2, so a signal 10 dB under the threshold leaves 20 dB under it. With EXP off THRESHOLD does nothing. The REGULATION meter shows the gain the unit is applying right now: LIFT to the left, 0 at the rotation point, CUT to the right. Read the chapter on the rotation point before deciding that it does not work.
 
 
 
