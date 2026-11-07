@@ -41,6 +41,18 @@ What the compressor does. Instead of a threshold it has a rotation point, a fixe
 
 What the expander does. With GAIN turned up the compressor lifts the noise in the pauses as well. Below THRESHOLD (−55 ... −15 dB relative to the rotation point, i.e. −67 ... −27 dBFS) the expander lowers the gain 1:2, so a signal 10 dB under the threshold leaves 20 dB under it. With EXP off THRESHOLD does nothing. The REGULATION meter shows the gain the unit is applying right now: LIFT to the left, 0 at the rotation point, CUT to the right. Read the chapter on the rotation point before deciding that it does not work.
 
+TSL-A91
+
+<img width="1800" height="300" alt="tsl-a91-panel-v1 0 9" src="https://github.com/user-attachments/assets/b4ddb739-d902-4165-ad2e-91d451654194" />
+
+
+A tape echo with four playback heads: a tape loop runs past one record head and four playback heads at fixed spacing, so the echoes come at about 78, 159, 247 and 336 ms. ECHO picks the heads you hear, HALL records them back onto the tape - repeats, a dense reverb, and near the top of the travel self-oscillation. The electronics are modelled part by part and solved as a circuit in real time, the tape is a physical model.
+
+What it is. TSL-A91 is a tape echo with four playback heads. A tape loop runs past one record head and four playback heads at fixed spacing, so the echoes come at about 78, 159, 247 and 336 ms - the time is chosen by picking heads, not by turning a delay knob. ECHO 1–4 mix each head into the output. HALL 1–4 record each head back onto the tape: one head gives repeats at its own time, several heads at once build a dense reverb, and near the top of the travel the loop starts to oscillate, exactly as on the hardware. RECORD sets how hard the tape is driven (soft tape saturation), ORIGINAL adds the direct signal through the unit’s tone stage, BASS and TREBLE shape both. Wow and flutter, tape hiss and the high-frequency losses of real tape are part of the sound. The electronics are a real-time component-level circuit model.
+
+
+
+
 
 
 
